@@ -393,3 +393,54 @@ footer {
     color: white;
 }
   
+
+@media (max-width: 768px) {
+    #lista-logo-header, #lista-navegacion-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .text-resaltat {
+        font-size: 18px;
+    }
+}
+
+/* Mòbils (fins a 480px) */
+@media (max-width: 480px) {
+    #lista-logo-header, #lista-navegacion-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .text-resaltat {
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
