@@ -381,10 +381,27 @@ flex-direction: column;
 
   /**********************************  BANNER  *********************************/
 
-footer {
-    color: white;
+  #videos h1 {
+    padding-left: 9%;
+    font-size: 35px;
+    padding-top: 10%;
+    font-family: "Special Gothic Expanded One", sans-serif;
+  }
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
 }
-  
+
+.video-responsive {
+    max-width: 100%;
+    height: auto;
+    margin: 0 6%;
+    border-radius: 12px; 
+}
 
 @media (max-width: 768px) {
     #lista-logo-header, #lista-navegacion-header {
