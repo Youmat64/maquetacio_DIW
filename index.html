@@ -1,47 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./stylesheet.css">
-        <title>Autoescuela Joves</title>
+
+        <!-- Tipografia italiana titulo -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">        
+        
+        <!-- Tipografia moderna subtitulos -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+        <!-- Tipografia clasica texto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+        
+        <title>Cubix Restaurante</title>
     </head>
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="">CARNET B</a></li>
-                    <li><a href="">SOBRE NOSOTROS</a></li>
-                    <li><a href="">¿DONDE ESTAMOS?</a></li>
-                    <li><a href="">CONTACTANOS</a></li>
+                <ul id="lista-navegacion-header">
+                    <li><a href="">NOSOTROS</a></li>
+                    <li><a href="">CARTA</a></li>
+                    <li><a href="">GALERIA</a></li>
                 </ul>
             </nav>
-            <div id="banner-header">
-                <div id="banner-titols">
-                    <h1 id="banner-logo">JOVES</h1>
-                    <h3 id="banner-eslogan">LA AUTOESCUELA DE TU BARRIO</h3>
-                    <img class="banner-img" src="./img/car-6695943_1920.jpg">
-                    <h1 id="section-titol-principal">¡APRENDER A CONDUCIR SIEMPRE FUE FÁCIL CON JOVES!</h1>
-                    <h3 id="section-subtitol-principal">Expertos en convertir conductores en maestros del volante.</h3>
-                    <img class="banner-img" src="./img/odometer-1810107_1920.jpg">
-                </div>
-            </div>
+            <p id="titulo-principal-restaurante">Italian Restaurant</p>
+            <p id="subtitulo-prinicipal-restaurante">Sabores que cuentan historias en cada bocado.</p>
+            <button id="boton-reserva-header">RESERVA</button>
         </header>
-        <section id="section-principal">
-            <div>
 
+
+        <section id="nosotros">
+            <h1 id="nosotros-titulo">Sobre nosotros</h1>
+            <div class="nosotros-container">
+                <img class="nosotros-img" src="./img/table-5706576_1920.jpg">
+                <p class="nosotros-text">
+                    <b class="text-resaltat">Cubix,</b> un rincón acogedor que ofrece <b class="text-resaltat">auténtica cocina italiana</b>. Con una decoración cálida y una amplia terraza, ideal tanto para cenas íntimas como para encuentros con amigos. La carta incluye platos tradicionales como pizzas al horno de leña y pastas frescas, destacando la carbonara, muy apreciada por los comensales. Además, ofrece opciones como el "Tagliere di salumi" y la "Tricolore con focaccia", todo <b class="text-resaltat">a precios razonables</b> y con un servicio amable y profesional .​    
+                </p>
             </div>
-            <div id="section-carnet">
-                
-                <div id="container-without-titol">
-                    <h2 id="section-titol-carnet">CARNET DE COCHE (B)</h2>
-                    <p id="section-description-coche">Obtén tu carnet B y empieza a conducir vehículos de hasta 3.500 kg y con capacidad para nueve personas. Con este permiso, también podrás manejar triciclos y cuadriciclos motorizados. En nuestra autoescuela te preparamos de forma eficaz, combinando clases teóricas y prácticas adaptadas a tus necesidades. ¡Aprender a conducir nunca fue tan fácil!</p>
-                </div>
-                <div>
-                    <img id="section-carnet-img" src="./img/Captura de pantalla 2025-03-26 011306.png">
-                </div>
-
+            <div class="nosotros-container">
+                <p class="nosotros-text">
+                    <b class="text-resaltat">Cubix</b> ha recibido excelentes valoraciones, con una <b class="text-resaltat">puntuación promedio de 9/10</b> basada en más de 500 opiniones en TheFork. Los clientes elogian la calidad de la comida, la atención del personal y el ambiente tranquilo del local. El restaurante también ofrece promociones, como descuentos de hasta el 30% al reservar en horarios específicos. Abre todos los días, con horarios extendidos los fines de semana, lo que lo convierte en una opción versátil para disfrutar de una experiencia culinaria italiana en el corazón de Barcelona .
+                </p>
+                <img class="nosotros-img" src="./img/wuzhen-7004638_1920.jpg">
             </div>
         </section>
+
+
+        <section id="carta">
+            <h1 id="carta-titulo">Carta</h1>
+            <div id="menu-titulo-general">
+                <h1>Menu</h1>
+            </div>
+
+            <div id="container-menu">
+                <div class="menu">
+                    <div class="menu-titulo">
+                        <h3>Menu 1</h3>
+                    </div>
+                    <div class="menu-estructura">
+                        <div>
+                            <h2 class="menu-estructura-titulo">Menú Degustación Italiano</h2>
+                            <p>
+                                Comienza con una entrada de <b class="text-resaltat">bruschetta al pomodoro sobre pan artesanal</b>, acompañada de un suave toque de albahaca fresca. Como plato principal, disfruta de una <b class="text-resaltat">pasta tagliatelle al tartufo</b>, elaborada con trufa negra y una delicada salsa cremosa de parmesano.    
+                            </p>
+                        </div>
+                        <div class="estructura-descimg">
+                            <div class="container-img">
+                                <img class="menu-estructura-img" src="./img/pasta-6263653_1920.jpg">
+                                <div class="menu-subtitulo-img">Bruschetta al pomodoro</div>
+                            </div>
+                            <div class="container-img">
+                                <img class="menu-estructura-img" src="./img/spring-roll-6760871_1920.jpg">
+                                <div class="menu-subtitulo-img">Entrante</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="menu">
+                    <div class="menu-titulo">
+                        <h3>Menu 2</h3>
+                    </div>
+                    <div class="menu-estructura">
+                        <div>
+                            <h2 class="menu-estructura-titulo">Menú Mar y Tierra Ligero</h2>
+                            <p>
+                                Este menú inicia con una <b class="text-resaltat" >ensalada de hojas frescas, nueces caramelizadas y queso de cabra</b>, aliñada con vinagreta de mostaza y miel. El plato principal consiste en un <b class="text-resaltat">lomo de merluza al horno con costra de limón</b> y hierbas, servido sobre cama de puré de coliflor.
+                            </p>
+                        </div>
+                        <div class="estructura-descimg">
+                            <div class="container-img">
+                                <img class="menu-estructura-img" src="./img/salad-1672505_1920.jpg">
+                                <div class="menu-subtitulo-img">Ensalada</div>
+                            </div>
+                            <div class="container-img">
+                                <img class="menu-estructura-img" src="./img/fish-8031138_1920.jpg">
+                                <div class="menu-subtitulo-img">Lomo de merluza</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </section>
+
+
+
+
+        <section id="reserva">
+            <h1 id="titulo-form">Galeria de imagenes</h1>
+            <div id="galeria-img">
+
+
+
+                <div class="galeria-container-img">
+                    <label for="img1">
+                        <img class="galeria-img-pic"  src="img/gallery/italian-cuisine-6903773_1280.jpg">
+                    </label>
+                    <input type="checkbox" id="img1" class="lightbox-toggle">
+                    <div class="lightbox">
+                        <label for="img1" class="lightbox-background"></label>
+                        <img src="img/gallery/italian-cuisine-6903773_1280.jpg" class="lightbox-img" alt="Ampliada">
+                    </div>
+
+
+
+
+                    <label for="img2">
+                        <img  class="galeria-img-pic" src="img/gallery/italian-food-6371757_1280.jpg">
+                    </label>
+                    <input type="checkbox" id="img2" class="lightbox-toggle">
+                    <div class="lightbox">
+                        <label for="img2" class="lightbox-background"></label>
+                        <img src="img/gallery/italian-food-6371757_1280.jpg" class="lightbox-img" alt="Ampliada">
+                    </div>
+
+
+
+
+                    <label for="img3">
+                        <img  class="galeria-img-pic" src="img/gallery/italian-pasta-7432298_1280.jpg">
+                    </label>
+                    <input type="checkbox" id="img3" class="lightbox-toggle">
+                    <div class="lightbox">
+                        <label for="img3" class="lightbox-background"></label>
+                        <img src="img/gallery/italian-pasta-7432298_1280.jpg" class="lightbox-img" alt="Ampliada">
+                    </div>
+
+
+
+                    <label for="img4">
+                        <img  class="galeria-img-pic" src="img/gallery/noodles-2150272_1280.jpg">
+                    </label>
+                    <input type="checkbox" id="img4" class="lightbox-toggle">
+                    <div class="lightbox">
+                        <label for="img4" class="lightbox-background"></label>
+                        <img src="img/gallery/noodles-2150272_1280.jpg" class="lightbox-img" alt="Ampliada">
+                    </div>
+
+
+
+
+                </div>
+                <div class="galeria-container-img">
+
+
+
+
+                    <label for="img5">
+                        <img  class="galeria-img-pic" src="img/gallery/pasta-1854245_1280.jpg">
+                    </label>
+                    <input type="checkbox" class="lightbox-toggle" id="img5">
+                    <div class="lightbox">
+                        <label for="img5" class="lightbox-background"></label>
+                        <img src="img/gallery/pasta-1854245_1280.jpg" class="lightbox-img" alt="Ampliada">
+                    </div>
+
+
+
+                    <label for="img6">
+                        <img  class="galeria-img-pic"src="img/gallery/pasta-6522515_1280.jpg">
+                    </label>
+                    <input type="checkbox" class="lightbox-toggle" id="img6">
+                    <div class="lightbox">
+                        <label for="img6" class="lightbox-background"></label>
+                        <img src="img/gallery/pasta-6522515_1280.jpg" class="lightbox-img">
+                    </div>
+
+
+                    <label for="img7">
+                        <img  class="galeria-img-pic"src="img/gallery/pasta-7523948_1280.jpg">
+                    </label>
+                    <input type="checkbox" class="lightbox-toggle" id="img7">
+                    <div class="lightbox">
+                        <label for="img7" class="lightbox-background"></label>
+                        <img src="img/gallery/pasta-7523948_1280.jpg" class="lightbox-img" alt="">
+                    </div>
+
+
+
+
+                    <label for="img8">
+                        <img class="galeria-img-pic" src="img/gallery/pizza-3010062_1280.jpg">
+                    </label>
+                    <input type="checkbox" id="img8" class="lightbox-toggle">
+                    <div class="lightbox">
+                        <label for="img8" class="lightbox-background"></label>
+                        <img src="img/gallery/pizza-3010062_1280.jpg" class="lightbox-img" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="reserva">
+            <h1 id="titulo-form">Haz tu reserva</h1>
+            <form action="">
+                <div id="container-form">
+                    <div class="container-form-content">
+                        <label for="">Nombre</label>
+                        <input type="text" name="" id="">
+                        <label for="">Numero de personas</label>
+                        <input type="number">
+                    </div>
+                    <div class="container-form-content">
+                        <label for="">Fecha</label>
+                        <input type="date" name="" id="">
+                        <label for="">Hora</label>
+                        <input type="time">
+                    </div>
+                </div>
+                <label for="">Descripción</label>
+                <div id="container-form-desc">
+                    <textarea placeholder="¿Quieres especificar algun detalle?"></textarea>
+                    <button id="boton-reserva-form" type="submit">Confirmar reserva</button>    
+                </div>
+            </form>
+        </section>
+
+ 
     </body>
 </html>

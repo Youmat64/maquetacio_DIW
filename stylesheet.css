@@ -1,137 +1,395 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
-/**********************************  NAV  *********************************/
-
-nav {
-    display: grid;
-    place-items: center;
-    background-color: #ffffff;
-    padding-top: 35px;
-    padding-bottom: 14px;
+section{
+    background-color: white;
 }
 
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    list-style: none;
+/**********************************  HEADER  *********************************/
+* {
+    margin: 0;
     padding: 0;
+}   
+ 
+header {
+    max-height: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav ul li a {
+header::before {
+    position: absolute;
+    content:"";
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url(./img/interior-2600879_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 20%;
+    z-index: -1;
+}
+
+
+p{
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.text-resaltat {
+    font-size: 20px;
+}
+
+#lista-logo-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#lista-navegacion-header {
+    background-color:transparent !important;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    place-items:center;
+    padding-bottom: 680px;
+    
+}
+
+#lista-navegacion-header li {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    place-items:center;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+#lista-navegacion-header li a {
     text-decoration: none;
-    color: #333;
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 15px 15px;
-    transition: 0,3s;
+    color:rgb(255, 255, 255);
+    font-family: "Special Gothic Expanded One", sans-serif;
+    width: 100px;
+    padding: 30px; 
+    text-align: center;
+   
 }
 
-nav ul li a:hover {
-    background-color: #e00000;
-    color: #ffffff  ;
+#titulo-principal-restaurante {
+    position: absolute;
+    font-size: 36px;
+    top: 50%;
+    left:30%;
+    transform: translate(-50%,-50%);
+    color: gold;
+    font-family:  "Italianno", cursive;
+    font-size: 90px;
+}
+
+#subtitulo-prinicipal-restaurante {
+    position: absolute;
+    bottom: 35%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    opacity: 100%;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 20px;
+}
+
+#boton-reserva-header {
+    position: fixed;
+    font-size: 19spx;
+    bottom: 9%;
+    right:2%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+    background-color: rgb(135, 26, 4);
+    font-family:  "Special Gothic Expanded One", sans-serif;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid 3px rgb(135, 26, 4);
     border-radius: 5px;
 }
 
+#boton-reserva-header:hover {
+    background-color: rgb(90, 5, 5);
+    border: solid 3px rgb(90, 5, 5);
+}
+
+
 /**********************************  BANNER  *********************************/
 
-#banner-header {
-    height: auto;
-    width: 100%;
-    position: relative;
+
+#nosotros {
+    padding: 100px;
+}
+
+.nosotros-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.nosotros-img {
+    margin: 20px;
+    height: 290px;
+    border: solid 1px;
+    border-radius: 8px;
+}
+
+#nosotros-titulo {
+    padding: 20px;
+    font-size: 32px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    padding-left: 100px;
+}
+
+
+/**********************************  BANNER  *********************************/
+
+
+#carta {
+    padding: 100px;
+}
+
+#carta-titulo {
+    padding: 20px;
+    padding-left: 100px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 32px;
+}
+
+#menu-titulo-general {
     text-align: center;
-    color: rgb(0, 0, 0);
-    padding: 0;
-    margin: 0;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
-h1, h3 {
-    padding: 0;
-    margin: 0;
+#container-menu {
+    padding-top: 20px;
 }
 
-#banner-logo {
-    position: absolute;
-    top: 20%;
-    left: 73%;
-    transform: translate(-50%, -50%);
-    color:#e00000;
-    font-size: 57px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.menu {
+    display: flex;
+    height: 500px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#banner-eslogan {
-    position: absolute;
-    top: 27%;
-    left: 73%;
-    transform: translate(-50%, -50%);
-    font-size: 26px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.menu-titulo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 15%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-family: 20px;
+    border-radius: 5px;
+    border: 3px solid black;
 }
 
-.banner-img {
+.menu-estructura {
+    height: 200px;
+    padding: 20px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+
+}
+
+.menu-estructura-img {
+    width:70%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    
+}
+
+.menu-estructura-titulo {
+    padding-left: 1.8%;
+}
+
+.estructura-descimg {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+.menu-subtitulo-img {
+    padding: 10px;
+    border: solid 1px black;
+    width: 66%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/**********************************  BANNER  *********************************/
+
+
+#reserva {
+    padding: 100px;
+}
+
+#container-form {
     width: 100%;
-    padding: 0;
-    margin: -1%  ;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-form-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+input {
+    width: 95%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+label {
+    font-family: "Merriweather", serif;
+}
+
+#titulo-form {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    margin-bottom: 3%;
+}
+
+textarea {
+    resize:none;
+    width: 97.4%;
+    height: 100px;
+    padding: 12px;
+    margin: 8px 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 
-/**********************************  SECTION PRINCIPAL  *********************************/
+footer{
+    height: 30px;
+}
 
-/*#section-principal {
+#boton-reserva-form {
+    font-size: 19px;
+    background-color: rgb(0, 0, 0);
+    font-family:  "Special Gothic Expanded One", sans-serif;
+    border: solid 3px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 20px;
+    width: 97.4%;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#boton-reserva-form:hover {
+    background-color: rgb(51, 51, 51);
+    border: solid 3px rgb(51, 51, 51);
+}
+
+#container-form-desc {
+display: flex;
+flex-direction: column;
+}
+
+
+/**********************************  BANNER  *********************************/
+/*
+#galeria-img {
+    display: flex;
+    flex-direction: column;
+}
+
+#galeria-container-img {
     display: grid;
-    place-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
 }*/
 
-section {
-    padding-left: 18.6%;
-    padding-right: 18.6%;
+.galeria-img-pic {
+    width: 300px;
+    border: solid 2px rgb(88, 88, 88);
+    border-radius: 1px red;
+    opacity: 60%;
+    margin: 5px;
 }
 
-#section-titol-principal {
-    margin-top: 5%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: -1%;
-    font-size: 27px;
+.galeria-img-pic:hover {
+    width: 305px;
+    opacity: 100%;
+}
+
+
+
+
+
+
+  .lightbox-toggle {
+    display: none;
+  }
+  
+  /* Oculto por defecto */
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .lightbox-img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+  }
+  
+  /* Mostrar el lightbox cuando el checkbox esté marcado */
+  .lightbox-toggle:checked + .lightbox {
+    display: flex;
+  }
+  
+  /* Fondo clicable para cerrar */
+  .lightbox-background {
     position: absolute;
-    top: 57%;
-    left: 3%;
-    color: #ffffff;
-}
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
 
-#section-subtitol-principal {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 27.3px;
-    position: absolute;
-    top: 75%;   
-    left: 2.7%;
-    color: #e00000;
-}
 
-#section-carnet {
-    margin-top: 0%;
-    display: grid;
-    place-items: start;
-    grid-template-columns: 1fr 1fr;
-}
+  /**********************************  BANNER  *********************************/
 
-#section-titol-carnet {
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #e00000;
+footer {
+    color: white;
 }
-
-#section-description-coche {
-    width: 80%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#container-without-titol {
-margin-top: 10%;
-}
-#section-carnet-img img {
-    max-width: 10%;
-    height: auto;
-}
+  
