@@ -19,8 +19,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-        
-        <title>Cubix Restaurante</title>
+
+        <!-- Icones de videos-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+
+         <title>Cubix Restaurante</title>
     </head>
     <body>
         <header>
@@ -223,14 +226,23 @@
         
         <section id="videos">
             <h1>Videos del Restaurant</h1>
-            <div class="video-section">
+            <div class="video-section"> 
                 <video 
+                    id="TheVideo"
                     src="video.mp4"         
                     controls
                     muted
                     preload="metadata"
                     class="video-responsive"
                 >El video no es compatible amb el teu navegador</video>
+
+
+                <div class="custom-controls">
+                    <span class="material-symbols-outlined" id="pause">pause_circle</span>
+                    <span class="material-symbols-outlined" id="play">play_circle</span>
+                    <span class="material-symbols-outlined" id="volume_on">volume_up</span>
+                    <span class="material-symbols-outlined" id="volume_off">volume_off</span>
+                </div>
             </div>
 
         </section>
@@ -261,6 +273,7 @@
             </form>
         </section>
 
+        <script src="exercici4.js"></script>
         <script src="exercici5.js"></script>
     </body>
 </html>
