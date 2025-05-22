@@ -19,3 +19,4 @@ volumeOnBtn.addEventListener("click", () => {
 volumeOffBtn.addEventListener("click", () => {
   video.muted = true;
 });
+ 
